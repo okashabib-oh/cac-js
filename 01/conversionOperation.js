@@ -28,3 +28,15 @@ console.log(Boolean(undefined)); // false
 
 console.log(String(null))
 console.log(String(undefined))
+
+
+// *************************OPERATIONS**************************
+
+console.log(21+"212");
+
+console.log(21+21+"21"+"22"+90); //42212290
+
+
+console.log(90**9); // power 9
+
+console.log(21++);
