@@ -39,4 +39,14 @@ console.log(21+21+"21"+"22"+90); //42212290
 
 console.log(90**9); // power 9
 
-console.log(21++);
+console.log(2%3);
+
+console.log(+true) // 1
+console.log(+"") // 0
+console.log(+10);
+console.log(+"10");
+
+let counter = 0
+counter++
+console.log(counter);
+
