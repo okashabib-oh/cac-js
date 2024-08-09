@@ -13,6 +13,4 @@ console.log(myDate.toLocaleString()) // 8/10/2024, 1:56:19 AM
 
 console.log(myDate.toLocaleTimeString()) // 1:57:00 AM
 
-let myNewDate = new Date() // other method of date Obj
-
-console.log(`${myNewDate.toLocaleDateString()} ${myNewDate.toLocaleTimeString()}`) // 8/10/2024 2:00:13 AM
+console.log(`${myDate.toLocaleDateString()} ${myDate.toLocaleTimeString()}`) // 8/10/2024 2:00:13 AM
