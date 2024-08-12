@@ -34,3 +34,20 @@ function myName(name = "Okasha") {
 
 console.log(myName())
 
+// ... spread operator when not knowing how many argument has passed when function called it returns array
+
+function nums(...nums) {
+    return nums
+}
+
+console.log(nums(123, 432, 532, 631, 64, 4343, 322))
+
+
+// this will sum first two numbers and other argumrnts will be multiply
+function operation(num1, num2, ...restNums) {
+    return num1 + num2 * restNums
+}
+
+console.log(operation(22, 44, 21, 33))
+
+console.log(22 + 32 * [21, 33, 43])
