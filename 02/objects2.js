@@ -85,3 +85,16 @@ const assignObj = Object.assign(obj1, obj2, obj3) // one more way of combining o
         topSpeed: carSpecs.topSpeed
     }
     ]
+
+// getting keys of the Object
+
+const getKeys = Object.keys(carSpecs)
+console.log(getKeys)
+
+// getting values of object
+
+const getValues = Object.values(carSpecs)
+console.log(getValues)
+
+// gives an array with each key and value in sub-array
+console.log(Object.entries(carSpecs))
