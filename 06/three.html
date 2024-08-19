@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nodes</title>
+    </head>
+    <body>
+        <div id="parent">
+            <p>GT3 992 RS</p>
+            <p>200 SX</p>
+            <p>S15</p>
+        </div>
+    </body>
+    <script>
+        document.body.style.background = "black"
+
+        const div = document.getElementById('parent')
+        div.style.background = "darkgrey"
+        div.style.padding = "10px"
+        div.style.borderRadius = "14px"
+
+        function addMore(moreName) {
+            const para = document.createElement('p')
+            para.appendChild(document.createTextNode(moreName))
+            div.appendChild(para)
+        }
+        addMore("E63 S")
+
+        function editMore(editName) {
+            const sel = document.querySelector('p:last-child')
+            const editPara = document.createElement('p')
+            editPara.appendChild(document.createTextNode(editName))
+            console.log(editPara)
+            sel.replaceWith(editPara)
+        }
+        editMore("C63 S")
+
+            // delete
+        function del(id) {
+            const select = document.querySelector(`p:${id}-child`)
+            select.remove()
+        }
+        
+        del("first")
+    </script>
+</html>

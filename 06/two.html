@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nodes</title>
+    </head>
+    <body>
+        <div id="parent">
+            <p>C63 S</p>
+            <p>GT3 992</p>
+            <p>E63 S</p>
+            <p>20 SX</p>
+            <p>S 15</p>
+        </div>
+    </body>
+
+    <script>
+        document.body.style.backgroundColor = "darkgrey" // body background changing
+
+        const div = document.querySelector('#parent')
+        div.style.backgroundColor = "black"
+        div.style.color = "grey"
+        div.style.padding = "10px"
+        div.style.borderRadius = "14px"
+        div.style.textAlign = "center"
+        div.style.display = "flex"
+        div.style.justifyContent = "center"
+        div.style.alignItems = "center"
+        div.style.flexWrap = "wrap"
+        div.style.gap = "12px"
+
+        for(let i = 0; i < div.children.length; i++) {
+            div.children[i].style.backgroundColor = "aliceblue"
+            div.children[i].style.padding = "8px"
+            div.children[i].style.color = "black"
+            div.children[i].style.width = "20%"
+            div.children[i].style.borderRadius = "10px"
+        }
+        console.log(div.children) // printing p->children inside div#parent
+
+            // creating div with nodes
+        const createDiv = document.createElement('div')
+        createDiv.style.backgroundColor = "black"
+        createDiv.style.color = "grey"
+        createDiv.style.padding = "10px"
+        createDiv.style.borderRadius = "14px"
+        createDiv.style.textAlign = "center"
+        createDiv.style.alignItems = "center"
+        createDiv.style.display = "flex"
+        createDiv.style.justifyContent = "center"
+        createDiv.style.marginTop = "10px"
+        createDiv.setAttribute("id", "secondDiv")
+        
+        const divChild = document.createElement('h2')
+        const h2Text = document.createTextNode("Chiron")
+        
+        divChild.style.textTransform = "uppercase"
+        divChild.style.fontFamily = "Impact,Charcoal,sans-serif"
+        divChild.appendChild(h2Text)
+        createDiv.append(divChild)
+        document.body.appendChild(createDiv)
+    </script>
+</html>

@@ -6,9 +6,45 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
     </head>
+    <style>
+        body {
+            background: grey;
+        }
+        #parent {
+            width: 50%;
+            background: black;
+            padding: 10px;
+            border-radius: 14px;
+            color: darkgrey;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
     <body>
-        <center>
-            <h1>Okasha</h1>
-        </center> 
+        <div id="parent">
+            <h1>DOM Manipulation</h1>
+            <ul>
+                <li class="list">20 SX</li>
+                <li class="list">S15</li>
+                <li class="list">GT3 992</li>
+            </ul>
+        </div>
     </body>
+    <script>
+        const myLi = document.getElementsByClassName('list')
+        const convLi = Array.from(myLi) // converting HTMLCollection to array to apply array methods
+        convLi.forEach((l) => {
+            l.style.color = "darkgreen"
+            l.style.backgroundColor = "aliceblue"
+            l.style.borderRadius = "14px"
+            l.style.padding = "8px"
+            l.style.margin = "4px"
+        })
+        const ul = document.querySelector('ul')
+        const newLi = document.createElement("li")
+        const liText = document.createTextNode("E63 S")
+        newLi.appendChild(liText)
+        ul.appendChild(newLi)
+    </script>
 </html>
