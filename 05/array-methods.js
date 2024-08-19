@@ -64,4 +64,9 @@ const numArr = [21, 44, 22, 90, 32, 11]
 const nu = numArr.reduce((a, d) => {
     return a + d
 }, 1)
-console.log(nu)
+//console.log(nu)
+
+const g = numArr.concat(myArr)
+g.forEach((e) => {
+    console.log(e * e)
+})
