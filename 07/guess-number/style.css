@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+#first,
+h1 {
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    border: 3px solid wheat;
+    display: block;
+    margin: 0 auto;
+}
+
+.resultParas{text-align: center; color: antiquewhite;}
+#submit{
+    border-radius: 12px;
+    padding: 10px;
+    border: none;
+    border: 2px solid thistle;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: burlywood;
+}
