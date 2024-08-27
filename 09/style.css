@@ -1,0 +1,45 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+h1{
+    background-color: chocolate;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 20px;
+    text-align: center;
+    border-bottom: 4px solid darkgoldenrod;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+#start{
+    background-color: lightgreen;
+    border-top: 3px solid green;
+    transition: all 0.5s;
+}
+#start:hover{
+    background-color: darkgreen;
+    transition: all 0.5s;
+    color: white;
+}
+#stop{
+    background-color: lightslategrey;
+    color: aliceblue;
+    border-top: 3px solid red;
+    transition: all 0.5s;
+}
+#stop:hover{
+    background-color: darkred;
+    transition: all 0.5s;
+}
